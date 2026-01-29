@@ -54,9 +54,10 @@
             <h4>{{ $contact->name }}</h4>
             <p>{{ $contact->email }}</p>
             <p>{{ $contact->phone }}</p>
-            <p>Group: {{ $contact->group ? $contact->group->group_name : '—' }}</p>
+            
+            
             <a href="/contact/{{ $contact->id }}/edit">Edit</a>
-            <form action="/contact/{{ $contact->id }}/delete" method="post" style="display:inline" onsubmit="return confirm('Delete contact?');">
+            <form action="/contact/{{ $contact->id }}/delete" method="post" style="display:inline">
                 @csrf
                 @method('DELETE')
                 <button type="submit">Delete</button>

@@ -42,7 +42,7 @@
             <h2>{{ $group->group_name }}</h2>
             <p>{{ $group->description }}</p>
             <a href="/groups/{{ $group->id }}/edit">Edit</a>
-            <form action="/groups/{{ $group->id }}/delete" method="post" style="display:inline" onsubmit="return confirm('Delete group?');">
+            <form action="/groups/{{ $group->id }}/delete" method="post" style="display:inline">
                 @csrf
                 @method('DELETE')
                 <button type="submit">Delete</button>
