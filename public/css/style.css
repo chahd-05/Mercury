@@ -1,0 +1,39 @@
+/* Simple, clean stylesheet for views */
+:root{
+  --bg:#f7f7f9;
+  --card:#ffffff;
+  --accent:#2b6cb0;
+  --muted:#666;
+}
+body{
+  font-family:Segoe UI, Roboto, Arial, sans-serif;
+  background:var(--bg);
+  color:#222;
+  margin:0;
+  padding:20px;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+form{margin:8px 0}
+input[type="text"], input[type="email"], select{
+  padding:8px 10px;
+  border:1px solid #ddd;
+  border-radius:4px;
+  margin-right:6px;
+}
+button{
+  background:var(--accent);
+  color:#fff;
+  border:none;
+  padding:8px 12px;
+  border-radius:4px;
+  cursor:pointer;
+}
+button:hover{opacity:0.95}
+h2,h3{margin:6px 0}
+.card{background:var(--card);border:1px solid #e6e6e9;padding:12px;border-radius:6px;margin:10px 0}
+.small{color:var(--muted);font-size:0.9rem}
+.container{max-width:900px;margin:0 auto}
+.inline-form{display:inline-block}
+.notice{padding:8px;background:#e6fffa;border:1px solid #b2f5ea;border-radius:4px;color:#065f46}
+.error{padding:8px;background:#fff5f5;border:1px solid #fed7d7;border-radius:4px;color:#742a2a}
